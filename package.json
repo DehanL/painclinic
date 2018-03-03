@@ -1,0 +1,40 @@
+{
+    "title": "Pain Clinic",
+    "name": "The Pain Clinic Website",
+    "version": "4.0.0",
+    "description": "Website for The Pain Clinic",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/landing-page",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page/issues",
+        "email": "dehanlouw@icloud.com"
+    },
+    "license": "MIT",
+    "author": "Dehan Louw"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "://github.com/DehanL/painclinic.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "font-awesome": "4.7.0",
+        "jquery": "3.3.1",
+        "simple-line-icons": "^2.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.2",
+        "gulp-header": "2.0.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0"
+    }
+}
