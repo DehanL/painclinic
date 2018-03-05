@@ -22,15 +22,17 @@ html(lang='en')
         section.intro
             .container
                 .row
-                    .col-md-6
+                    .col-md-12
                         img
                     .col-md-6
-                        p Dr. Louis Smit is an internationally qualified and experience specialist in the field. 
+                        h2 Professional background
+                         p Dr. Louis Smit is an internationally qualified and experience specialist in the field. 
 	After completing his undergraduate studies locally, he practiced in Canada, before returning
 	to furhrt his expertise to aneasthetics. He cemented his expertise by completing his Fellowship in 
 	Interventional pain at the renowned World Institute of Pain in the Netherlands.
-	
-	Dr. Smit has also been personally affected by the effects of pain and illness and personally knows the road
+                    .col-md-6
+                        h2 Personal journey
+                        p Dr. Smit has also been personally affected by the effects of pain and illness and personally knows the road
 	towards returing succesfully and hapily to everyday life.
         //Services                
         section.services.bg-light.text-center
@@ -41,7 +43,7 @@ html(lang='en')
                             .features-icons-icon.d-flex
                                 i.icon-screen-desktop.m-auto.text-primary
                             h3 Diagnosis
-                            p.lead.mb-0 From narrowing in on the pain, to identifying root causes and lifestyle contributers
+                            p.lead.mb-0 From narrowing in on the point of pain, to identifying root causes and lifestyle contributers
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
                             .features-icons-icon.d-flex
@@ -57,6 +59,10 @@ html(lang='en')
         // Treatment options
         section.treatment
             .container-fluid.p-0
+                .row
+                    .col-lg-12
+                        h1 Treatment Options
+                        p The Helderberg pain Clinic provides a wide range of options when it comes to dealing with all types of pain. We help guide patients to the most appropriate treatment for the cause and stage of their condition.
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/bg-showcase-1.jpg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
@@ -126,20 +132,17 @@ html(lang='en')
                             img.img-fluid.rounded-circle.mb-3(src='img/testimonials-3.jpg', alt='')
                             h5 Sarah	W.
                             p.font-weight-light.mb-0 "Thanks so much for making these free resources available to us!"
-        // Call to Action
-        section.call-to-action.text-white.text-center
-            .overlay
+        // Locate
+        section.locate
             .container
+                h2 Visit Helderberg Pain Clinic
                 .row
-                    .col-xl-9.mx-auto
-                        h2.mb-4 Ready to get started? Sign up now!
-                    .col-md-10.col-lg-8.col-xl-7.mx-auto
-                        form
-                            .form-row
-                                .col-12.col-md-9.mb-2.mb-md-0
-                                    input.form-control.form-control-lg(type='email', placeholder='Enter your email...')
-                                .col-12.col-md-3
-                                    button.btn.btn-block.btn-lg.btn-primary(type='submit') Sign up!
+                    .col-md-4
+                        p 68 South Street
+                        Centurion
+                        Villa Lucca
+                    .col-md-8
+                        <frm> map
         // Footer
         footer.footer.bg-light
             .container
