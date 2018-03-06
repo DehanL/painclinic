@@ -115,3 +115,26 @@ a {
     bottom: 0;
     left: 0;
     width: 100%; }
+
+.services {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .services .features-icons-item {
+    max-width: 20rem; }
+    .services .features-icons-item .features-icons-icon {
+      height: 7rem; }
+      .services .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem; }
+    .services .features-icons-item:hover .features-icons-icon i {
+      font-size: 5rem; }
+  .services .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+    .services .features-icons .features-icons-item {
+      max-width: 20rem; }
+      .services .features-icons .features-icons-item .features-icons-icon {
+        height: 7rem; }
+        .services .features-icons .features-icons-item .features-icons-icon i {
+          font-size: 4.5rem; }
+      .services .features-icons .features-icons-item:hover .features-icons-icon i {
+        font-size: 5rem; }
