@@ -1,10 +1,18 @@
 .about {
   
     background-color: $primary;
+    position: relative;
     
-    .footlogo{
-        width: 200px;
-        position: absolute;
-        right: 5em;
+    .cert-logo{
+        position: relative;
+        width: 100%;
     }
+    
+    .foot-gel{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
 }

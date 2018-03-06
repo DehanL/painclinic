@@ -105,8 +105,13 @@ a {
   color: #868e96 !important; }
 
 .about {
-  background-color: #578EA9; }
-  .about .footlogo {
-    width: 200px;
+  background-color: #578EA9;
+  position: relative; }
+  .about .cert-logo {
+    position: relative;
+    width: 100%; }
+  .about .foot-gel {
     position: absolute;
-    right: 5em; }
+    bottom: 0;
+    left: 0;
+    width: 100%; }
