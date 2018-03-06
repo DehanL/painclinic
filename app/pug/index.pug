@@ -16,24 +16,36 @@ html(lang='en')
         link(href='css/stylesheet.min.css', rel='stylesheet')
     body
         // Header
-        section.header.full-section
+        section.header.h-100.d-flex.align-items-center.justify-content-center
+            img(src="img/logo.svg")
+        //Intro
+        section.intro.content-section
             .container
-                img.mx-auto(src="img/logo.svg")
-        section.intro
+                p.blockquote Pain is a complex phenomenon with which many have to deal with on a daily basis. Often misunderstood and seldom local. It can present dissociatively, behave irratiaclly and is as ilusive to diagnose as it is stuborn to treat.
+        // About
+        section.about.bg-primary
             .container
-                .row
-                    .col-md-12
-                        img
+                .row.pb-2
+                    .col-md-12.text-center.pb-5.pt-5
+                        h1 Dr. Louis Smit
                     .col-md-6
                         h2 Professional background
-                         p Dr. Louis Smit is an internationally qualified and experience specialist in the field. 
-	After completing his undergraduate studies locally, he practiced in Canada, before returning
-	to furhrt his expertise to aneasthetics. He cemented his expertise by completing his Fellowship in 
-	Interventional pain at the renowned World Institute of Pain in the Netherlands.
+                        p Dr. Louis Smit is an internationally qualified and experience specialist in the field. After completing his undergraduate studies locally, he practiced in Canada, before returning to further his expertise in aneasthetics.
+                        
+                        p He cemented his education by completing his Fellowship in Interventional pain at the renowned World Institute of Pain in the Netherlands.
                     .col-md-6
                         h2 Personal journey
-                        p Dr. Smit has also been personally affected by the effects of pain and illness and personally knows the road
-	towards returing succesfully and hapily to everyday life.
+                        p Dr. Smit has also been personally affected by the effects of pain and illness and personally knows the road towards returing succesfully and hapily to everyday life.
+                .row
+                    .col-xs-12.col-md-6.mx-auto
+                        .profilepic.mx-auto
+                            img(src="img/testimonials-1.jpg")
+            img.footlogo.pull-right(src="img/logo_blk.svg")
+            img(src="img/mistyfooter.svg")
+        //ellaborate
+        section.ellaborate.content-section
+            .container
+                p.blockquote Helderberg Pain Clinic has built a reputation on understanding, defining and managing the field of pain. We are experts at seeing pain hollistically and solving underlying problems rather than treating superficial
         //Services                
         section.services.bg-light.text-center
             .container
@@ -139,10 +151,7 @@ html(lang='en')
                 .row
                     .col-md-4
                         p 68 South Street
-                        Centurion
-                        Villa Lucca
                     .col-md-8
-                        <frm> map
         // Footer
         footer.footer.bg-light
             .container

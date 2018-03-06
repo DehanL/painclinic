@@ -1,4 +1,6 @@
-body {
+body,html {
+  position: relative;
+  height: 100%;
   @include body-font;
 }
 
@@ -11,3 +13,29 @@ h6 {
   @include body-font;
   font-weight: 700;
 }
+
+// Content Section
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.full-section{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+//Cropped Profile picture
+.profilepic {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            display: inline;
+            height: 100%; 
+        }
+        
+    }

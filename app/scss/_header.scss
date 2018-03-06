@@ -1,10 +1,9 @@
 .header {
-  position: relative;
   background: url('../img/bg-masthead.jpg') no-repeat center center;
   @include background-cover;
     img{
         width: 200px;
-        display: block;
+        position: relative;
         
         @media (min-width: 768px) {
             width: 500px;
