@@ -141,17 +141,17 @@ a {
       .services .features-icons .features-icons-item:hover .features-icons-icon i {
         font-size: 5rem; }
 
-.locate {
+locate {
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-attachment: fixed; }
-  .locate img {
+  locate img {
     width: 200px;
     position: relative; }
     @media (min-width: 768px) {
-      .locate img {
+      locate img {
         width: 500px; } }
-  .locate h1 {
+  locate h1 {
     font-size: 2rem; }
     @media (min-width: 768px) {
-      .locate h1 {
+      locate h1 {
         font-size: 3rem; } }
