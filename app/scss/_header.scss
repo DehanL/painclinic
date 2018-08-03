@@ -2,7 +2,7 @@
   background: url('../img/bg-masthead.jpg') no-repeat center center;
   @include background-cover;
     img{
-        width: 200px;
+        width: 300px;
         position: relative;
         
         @media (min-width: 768px) {

@@ -5,7 +5,7 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
-        title Helderberg Pain Clinic
+        title Helderberg Pain Clinic - Interventional Pain Practitioner in Somerset West
         // Bootstrap core CSS
         link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
         // Custom fonts for this template
@@ -14,38 +14,75 @@ html(lang='en')
         link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
         // Custom styles for this template
         link(href='css/stylesheet.min.css', rel='stylesheet')
+        //Favicon
+        link(rel="icon", href="img/favicon.ico")
     body
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') 
+                    span 
+                        img.pr-3(src="img/orb.svg")
+                    span Helderberg Pain CLinic
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') About
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#treatment') Treatments
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#locate') Contact
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#locate') Location
         // Header
         section.header.h-100.d-flex.align-items-center.justify-content-center
             img(src="img/logo.svg")
         //Intro
         section.intro.content-section.bg-light
             .container
-                p.blockquote Pain is a complex phenomenon with which many have to deal with on a daily basis. Often misunderstood and seldom local. It can present dissociatively, behave irratiaclly and is as ilusive to diagnose as it is stuborn to treat.
-        // About
-        section.about.bg-primary
-            .container
+                .row.mb-3
+                    .col-md-12
+                        h1 Interventional Pain Practitioner in Somerset West
                 .row
-                    .col-md-12.text-center.pb-5.pt-5
-                        h1 Dr. Louis Smit
+                    .col-md-8
+                        p Pain is a complex phenomenon with which many have to deal with on a daily basis. Often misunderstood and seldom local. It can present dissociatively, behave irratiaclly and is as ilusive to diagnose as it is stuborn to treat.
+                        p Helderberg Pain Clinic has built a reputation on understanding, defining and managing the field of pain. We are experts at seeing pain hollistically and solving underlying problems rather than treating superficial
+                .form-row.mt-5
+                    .col-12.col-md-2
+                        a.button.btn.btn-block.btn-lg.btn-info(href="mailto:info@helderbergpainclinic.co.za") Enquire
+        // Aboutn
+        section#about.about.bg-primary
+            .container.pt-5
+                h1 Dr. Louis Smit
+                h3 Interventional Pain Practitioner
+                p MB.ChB.(Stell) Dip. Obst.(SA), DA(SA), NDT(Sed), FIPP
+                hr
+                .row.mt-5
                     .col-md-6
-                        h2 Professional background
-                        p Dr. Louis Smit is an internationally qualified and experience specialist in the field. After completing his undergraduate studies locally, he practiced in Canada, before returning to further his expertise in aneasthetics.
+                        h4 Professional background
+                        p Dr. Louis Smit is an internationally qualified and experience specialist in the field of pain. After completing his undergraduate studies locally, he practiced in Canada, before returning to further his expertise in anesthetics.
                         
-                        p He cemented his education by completing his Fellowship in Interventional pain at the renowned World Institute of Pain in the Netherlands.
+                        p He cemented his education by completing his Fellowship in Interventional Pain at the renowned World Institute of Pain in the Netherlands.
+                        
+                        a.btn.btn-info.text-dark.mb-3(href="img/fipp.pdf", target="_blank")
+                            i.icon-book-open 
+                                span FIPP Certification
+                            
                     .col-md-6
-                        h2 Personal journey
-                        p Dr. Smit has also been personally affected by the effects of pain and illness and personally knows the road towards returing succesfully and hapily to everyday life.
-                .row.pb-5
+                        h4 Personal journey
+                        p After being diagnosed with Guillain Barre Syndrome, Dr. Smit is intimately familiar with the path to recovery. Learning to walk, write and live again provided him with a painful, yet irreplacable understanding of the subject.
+                        
+                        p A combination of education and experience has culminated in a holistic approach to the patient as body, soul and spirit. The Helderberg Pain Clinic shares this view of surpasing a mere biomedical analysis in order to truly help their patients thrive and enjoy lasting vitality.
+                        
+                .row.pb-5           
                     .col-md-3.offset-md-9
                         img.cert-logo(src="img/wip.png")
-        //ellaborate
-        section.ellaborate.content-section.text-center
-            .container
-                p.blockquote Helderberg Pain Clinic has built a reputation on understanding, defining and managing the field of pain. We are experts at seeing pain hollistically and solving underlying problems rather than treating superficial
         //Services                
-        section.services.bg-dark.text-white.text-center
+        section.services.bg-light.text-white.text-center.text-dark
             .container
+                
                 .row
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
@@ -58,7 +95,7 @@ html(lang='en')
                             .features-icons-icon.d-flex
                                 i.icon-people.m-auto.text-primary
                             h3 Treatment
-                            p.lead.mb-0 Hollistic approach to applying the latest advancements in pain management and treatment
+                            p.lead.mb-0 Holistic approach to applying the latest advancements in pain management and treatment
                     .col-lg-4
                         .features-icons-item.mx-auto.mb-0.mb-lg-3
                             .features-icons-icon.d-flex
@@ -66,80 +103,76 @@ html(lang='en')
                             h3 Rehabilitation
                             p.lead.mb-0 Ensuring long term relief and walking the road to recovery together
         // Treatment options
-        section.treatment.bg-light
-            .container.content-section.text-center
-                .row
-                    .col-lg-12
-                        h1 Treatment Options
-                        p The Helderberg pain Clinic provides a wide range of options when it comes to dealing with all types of pain. We help guide patients to the most appropriate treatment for the cause and stage of their condition.
+        section#treatment.treatment.bg-light
+            
             .container-fluid.p-0
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/physicaltherapy.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
                         h2 Physical therapy
                         p.lead.mb-0
-                            | From narrowing in on the pain, to identifying root causes and lifestyle contributers 
+                            | Massage, Physiotherapy, Pilates, Biokinetics, Chiropractic and TENS tretments
                 .row.no-gutters
                     .col-lg-6.text-white.showcase-img(style="background-image: url('img/lifestyle.jpeg');")
                     .col-lg-6.my-auto.showcase-text
                         h2 Lifestyle changes
                         p.lead.mb-0
-                            | Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!
+                            | Guiding patients to manage their issues by means of lifestyle alterations
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/psycological.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
                         h2 Psycological support
                         p.lead.mb-0
-                            | Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!
+                            | Coping training and stress management- completing the circle of comprehensive pain treatment
                 .row.no-gutters
                     .col-lg-6.order-lg-1.text-white.showcase-img(style="background-image: url('img/ablative.jpeg');")
                     .col-lg-6.order-lg-2.my-auto.showcase-text
                         h2 Open ablative Surgery
                         p.lead.mb-0
-                            | Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!
+                            | Expert surgical intervention for serious cases which dictate more drastic measures
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/underlying.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
                         h2 Underlying cause treatment
                         p.lead.mb-0
-                            | From narrowing in on the pain, to identifying root causes and lifestyle contributers 
+                            | Looking past superficial symptoms to treat the deep seated issues presenting as pain 
                 .row.no-gutters
                     .col-lg-6.text-white.showcase-img(style="background-image: url('img/analgesia.jpeg');")
                     .col-lg-6.my-auto.showcase-text
                         h2 Analgesia & Adjuvent medication
                         p.lead.mb-0
-                            | Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!
+                            | Complete range of pharmacological interventions, selected with the greatest care and caution
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/minimal.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
                         h2 Minimally invasive treatmetns
                         p.lead.mb-0
-                            | Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!
+                            | Quick and comfortable per-cutaneous interventional treatment
                 .row.no-gutters
                     .col-lg-6.order-lg-1.text-white.showcase-img(style="background-image: url('img/alternative.jpeg');")
                     .col-lg-6.order-lg-2.my-auto.showcase-text
-                        h2 Various alternative, non-allopathic healers
+                        h2 Alteratives
                         p.lead.mb-0
-                            | Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!
+                            | Various alternative, non-allopathic healers available for all circumstances
         // Locate
-        section.locate.content-section.bg-light
-            .container
-                .row.text-center.mb-5
-                    .col-md-8.offset-2
-                        h2 Ask for help today
-                        hr
-                .row
-                    .col-md-4.text-center
-                        i.icon.icon-phone.display-4
-                        p.mt-3 082 555 4146
-                    .col-md-4.text-center
-                        i.icon.icon-location-pin.display-4
+        section#locate.locate.content-section.bg-light
+            .container.text-center
+                h2 Ask for help today
+                hr.w-50
+                .row.mt-5
+                    .col-md-4.text-center.mb-3
+                        i.icon.icon-phone.display-4.text-primary
+                        p.mt-3 021 824 1310 
+                    .col-md-4.text-center.mb-3
+                        i.icon.icon-location-pin.display-4.text-primary
                         p.mt-3 Paardevlei Specialist Medical Centre
                         p Somerset West
+                        a.btn.btn-md.btn-info.mb-3(href="https://www.google.co.za/maps/place/Paardevlei+Specialist+Medical+Centre/@-34.0922013,18.814457,17z/data=!4m8!1m2!2m1!1spaardevlei+specialist+medical+centre!3m4!1s0x1dcdcaa84a596e77:0xc17593b40adab1e5!8m2!3d-34.0920798!4d18.8167353", target="_blank" ) Go To Map
                     .col-md-4.text-center
-                        i.icon.icon-envelope.display-4
+                        i.icon.icon-envelope.display-4.text-primary
                         a.d-block.mt-3.text-dark(href="mailto:info@helderbergpainclinic.co.za") 
                                                     | info@helderbergpainclinic.co.za
+                                                    
                         
         // Footer
         footer.footer.bg-dark
@@ -151,15 +184,17 @@ html(lang='en')
                                 a(href='#') Top
                             li.list-inline-item ⋅
                             li.list-inline-item
-                                a(href='#') About
+                                a(href='#about') About
                             li.list-inline-item ⋅
                             li.list-inline-item
-                                a(href='#') Treatment
+                                a(href='#treatment') Treatments
                             li.list-inline-item ⋅
                             li.list-inline-item
-                                a(href='#') Contact
+                                a(href='#locate') Contact
                         p.text-muted.small.mb-4.mb-lg-0 © Tourmalet Media 2018. All Rights Reserved.
                     
         // Bootstrap core JavaScript
         script(src='vendor/jquery/jquery.min.js')
+        script(src='vendor/jquery-easing/jquery.easing.min.js')
         script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+        script(src='js/thescript.min.js')

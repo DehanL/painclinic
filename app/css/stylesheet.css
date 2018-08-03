@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap -  v1.0.0 ()
  * Copyright 2013-2018 DC Louw
- * Licensed under ISC (https://github.com/BlackrockDigital/Pain Clinic/blob/master/LICENSE)
+ * Licensed under ISC (https://github.com/BlackrockDigital/PainClinic/blob/master/LICENSE)
  */
 body, html {
   position: relative;
@@ -43,7 +43,7 @@ h6 {
   -o-background-size: cover;
   background-size: cover; }
   .header img {
-    width: 200px;
+    width: 300px;
     position: relative; }
     @media (min-width: 768px) {
       .header img {
@@ -117,6 +117,19 @@ a {
     bottom: 0;
     left: 0;
     width: 100%; }
+  .about .profilepic {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; }
+    .about .profilepic img {
+      display: inline;
+      height: 100%; }
+    @media (min-width: 768px) {
+      .about .profilepic {
+        width: 120px;
+        height: 120px; } }
 
 .services {
   padding-top: 7rem;
@@ -155,3 +168,66 @@ locate {
     @media (min-width: 768px) {
       locate h1 {
         font-size: 3rem; } }
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  #mainNav .navbar-brand {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #578EA9;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #578ea9; }
+    #mainNav .navbar-brand img {
+      height: 50px; }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212529; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+      color: #578EA9; }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+      color: #578EA9 !important;
+      background-color: transparent; }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+        background-color: transparent; }
+  @media (min-width: 992px) {
+    #mainNav {
+      border-color: transparent;
+      background-color: transparent; }
+      #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7); }
+        #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+          color: #fff; }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link {
+        padding: 0.5rem 1rem; }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7); }
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+          color: #fff; }
+      #mainNav.navbar-shrink {
+        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+        background-color: #fff; }
+        #mainNav.navbar-shrink .navbar-brand {
+          color: #578EA9; }
+          #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+            color: #578ea9; }
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+          color: #212529; }
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: #578EA9; } }

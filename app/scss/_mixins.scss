@@ -11,3 +11,17 @@
 @mixin body-font {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+@mixin serif-font() {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}

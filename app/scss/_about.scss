@@ -15,4 +15,23 @@
         width: 100%;
     }
     
+    //Cropped Profile picture
+    .profilepic {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            display: inline;
+            height: 100%; 
+        }
+        
+        @media(min-width: 768px){
+            width: 120px;
+            height: 120px;
+        }
+        
+    }
+    
 }
