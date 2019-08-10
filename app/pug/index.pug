@@ -5,7 +5,7 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='Pain Clinic based in Somerset West- headed by world renowned interventional pain practitioner Dr. Louis Smit')
         meta(name='author', content='Dehan Louw')
-        <meta name="google-site-verification" content="jx4UxsWEZjQtAJtPkbyF_R1xczPfLZfDAJ1cULruL-4" />
+        meta(name="google-site-verification" content="jx4UxsWEZjQtAJtPkbyF_R1xczPfLZfDAJ1cULruL-4")
         title Pain Clinic based in Somerset West
         // Bootstrap core CSS
         link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
@@ -19,24 +19,7 @@ html(lang='en')
         link(rel="icon", href="img/favicon.ico")
     body
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
-            .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') 
-                    span 
-                        img.pr-3(src="img/orb.svg", alt="Pain Clinic logo")
-                    span Helderberg Pain CLinic
-                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ml-auto
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#treatment') Treatments
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#locate') Contact
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#locate') Location
+        include navbar.pug
         // Header
         section.header.h-100.d-flex.align-items-center.justify-content-center
             img(src="img/logo.svg", alt="Helderberg Pain Clinic Logo")
@@ -104,15 +87,23 @@ html(lang='en')
                             h3 Rehabilitation
                             p.lead.mb-0 Ensuring long term relief and walking the road to recovery together
         // Treatment options
-        section#treatment.treatment.bg-light
-            
+        section#treatment.treatment.bg-light        
             .container-fluid.p-0
+                .row.no-gutters
+                    .col-lg-6.text-white.showcase-img(style="background-image: url('img/RFThumbnail.png');")
+                    .col-lg-6.my-auto.showcase-text
+                        h2 Cutting edge treatments
+                        p.lead.mb-0
+                            | We utilise advanced RF technology to provide the latest in targeted pain relief techniques
+                        a(href="treatments-radio-frequency.html")
+                            i.fa.fa-angle-right.mr-3
+                            span Read more
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/physicaltherapy.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
                         h2 Physical therapy
                         p.lead.mb-0
-                            | Massage, Physiotherapy, Pilates, Biokinetics, Chiropractic and TENS tretments
+                            | Massage, Physiotherapy, Pilates, Biokinetics, Chiropractic and TENS treatments
                 .row.no-gutters
                     .col-lg-6.text-white.showcase-img(style="background-image: url('img/lifestyle.jpeg');")
                     .col-lg-6.my-auto.showcase-text
@@ -146,7 +137,7 @@ html(lang='en')
                 .row.no-gutters
                     .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/minimal.jpeg');")
                     .col-lg-6.order-lg-1.my-auto.showcase-text
-                        h2 Minimally invasive treatmetns
+                        h2 Minimally invasive treatments
                         p.lead.mb-0
                             | Quick and comfortable per-cutaneous interventional treatment
                 .row.no-gutters
@@ -172,27 +163,9 @@ html(lang='en')
                     .col-md-4.text-center
                         i.icon.icon-envelope.display-4.text-primary
                         a.d-block.mt-3.text-dark(href="mailto:info@helderbergpainclinic.co.za") 
-                                                    | info@helderbergpainclinic.co.za
-                                                    
-                        
+                                                    | info@helderbergpainclinic.co.za         
         // Footer
-        footer.footer.bg-dark
-            .container
-                .row
-                    .col-lg-6.h-100.text-center.text-lg-left.my-auto
-                        ul.list-inline.mb-2
-                            li.list-inline-item
-                                a(href='#') Top
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#about') About
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#treatment') Treatments
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#locate') Contact
-                        p.text-muted.small.mb-4.mb-lg-0 © Tourmalet Media 2018. All Rights Reserved.
+        include footer.pug
                     
         // Bootstrap core JavaScript
         script(src='vendor/jquery/jquery.min.js')
